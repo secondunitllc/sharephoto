@@ -3,16 +3,26 @@
     text-align: center;
 }
 
+
+
 .login {
-    font-family: 'Fira Sans', sans-serif;
-    padding-top: 100px;
+    font-family: 'Fira Sans', sans-serif, 'Noto Sans JP', sans-serif;
+    padding-top: 50px;
     margin: 0 auto;
     width: 400px;
-    
 }
 
+.register {
+    font-family: 'Fira Sans', sans-serif, 'Noto Sans JP', sans-serif;
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 400px;
+}
+
+
+
 .form {
-    font-family: 'Fira Sans', sans-serif;
+    
     padding: 1em 1em;
     margin: 0em 0;
     font-weight: bold;
@@ -29,5 +39,30 @@
     padding-top: 2em;
     line-height: 0.5em;
     
+}
+.register-attention p{
+    text-align: right;
+    line-height: 2em;
+    font-size: 12px;
+
+}
+
+.attention p {
+    font-size: 14px;
+    
+}
+
+footer {
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+    height: 50px;
+    width: 100%;
+    background-color: black;
+}
+
+footer p{
+    font-size: 14px;
+    color: white;
+    text-align: center;
 }
 
