@@ -15,10 +15,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// ユーザ登録
-Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup.get');
-Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
+Route::get('/index', function () {
+    return view('index');
+});
 
+// ユーザ登録
+//Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup.get');
+//Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
+Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
+Route::get('signup', function(){
+   return view('auth.register'); 
+})->name('signup.get');
 // 認証
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login')->name('login.post');
