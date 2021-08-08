@@ -20,9 +20,7 @@
 
 
     <div>
-        <p><h1>id</h1>{{ $user->id }}</p>
-        <p><h1>name</h1>{{ $user->name }}</p>
-        <p><h1>email</h1>{{ $user->email }}</p>
+        <p>{{ $user->name }}</p>
         
         
         
