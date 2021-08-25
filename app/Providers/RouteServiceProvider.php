@@ -21,7 +21,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/index/{user}';
+    public const HOME = '/mypage';
     
 
     /**

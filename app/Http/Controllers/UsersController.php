@@ -4,16 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User; // 追加
+use App\Profile; // 追加
 use Auth;
 
 class UsersController extends Controller
 {
     public function index($user)
     {
-        if (\Auth::check()) {
-            $user = Auth::user();
+        //if (\Auth::check()) {
+        $user = Auth::user();
             
-        }
+        //}
         return view('index', [
             'user' => $user,
             //'contents' => $contents,
@@ -103,5 +104,19 @@ class UsersController extends Controller
     public function destroy($id)
     {
         //
+    }
+    
+    public function mypage()
+    {
+        $user = Auth::user();
+        $profile = Profile::all();
+        //$user->profile()->orderBy('created_at', 'desc')->paginate(3);
+        
+        
+        return view('index', [
+            'user' => $user,
+            'profile' => $profile,
+            
+        ]);
     }
 }

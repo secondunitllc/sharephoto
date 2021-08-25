@@ -1,10 +1,24 @@
+.navbar {
+    font-family: 'Fira Sans', sans-serif, 'Noto Sans JP', sans-serif;
+    overflow: hidden;
+    border-bottom: double 1px silver;
+}
+
+.menu {
+    list-style: none;    
+}
+
+.menu li {
+    float: left;
+}
+
+/*←絶対位置*/
 .title {
     font-size: 30px;
     text-align: center;
 }
 
-
-
+/*←絶対位置*/
 .login {
     font-family: 'Fira Sans', sans-serif, 'Noto Sans JP', sans-serif;
     padding-top: 50px;
@@ -12,6 +26,7 @@
     width: 400px;
 }
 
+/*←絶対位置*/
 .register {
     font-family: 'Fira Sans', sans-serif, 'Noto Sans JP', sans-serif;
     padding-top: 50px;
@@ -19,8 +34,7 @@
     width: 400px;
 }
 
-
-
+/*←絶対位置*/
 .form {
     
     padding: 1em 1em;
@@ -29,17 +43,21 @@
     border: solid 1px #000000;
 }
 
+/*←絶対位置*/
 .form-group {
     margin: 0; 
     padding: 0;
 }
 
+/*←絶対位置*/
 .attention {
     width: 100%;
     padding-top: 2em;
     line-height: 0.5em;
     
 }
+
+/*←絶対位置*/
 .register-attention p{
     text-align: right;
     line-height: 2em;
@@ -47,11 +65,13 @@
 
 }
 
+/*←絶対位置*/
 .attention p {
     font-size: 14px;
     
 }
 
+/*←絶対位置*/
 footer {
     position: absolute;/*←絶対位置*/
     bottom: 0; /*下に固定*/
@@ -60,6 +80,7 @@ footer {
     background-color: black;
 }
 
+/*←絶対位置*/
 footer p{
     font-size: 14px;
     color: white;

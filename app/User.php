@@ -54,4 +54,11 @@ class User extends Authenticatable
         /**$this->loadCount('favorites');*/
     }
     
+      // 「１対１」→ メソッド名は単数形
+    public function profile()
+  {
+    // Profileモデルのデータを引っ張てくる
+    return $this->hasOne('Profile::class');
+  }
+    
 }
